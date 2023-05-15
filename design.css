@@ -27,6 +27,9 @@ padding: 0 15px;
 
 
 .circled-star{
+    position: absolute;
+    left: 35.5em;
+    top: 10em;
     width: 4em;
     height: 4em;
     background-color: #262E38;
@@ -43,6 +46,11 @@ padding: 0 15px;
     width: 80%;
     align-items: start;
     text-align: start;
+    margin-top: 5em;
+}
+
+.content h1 , .content p{
+    margin-bottom: 0.5em;
 }
 
 .content h1{
@@ -55,13 +63,19 @@ padding: 0 15px;
     line-height: 1.3em;
 }
 
+.choose-circles{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 .choose-circles button{
     padding: 19px 23px;
     border: none;
     border-radius: 50%;
     color: #969FAD;
     background-color: #262E38;
-    /* margin-left: 20px; */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .submit-button button{
@@ -70,7 +84,9 @@ padding: 0 15px;
     color:#FFFFFF;
     border: none;
     border-radius: 1.7rem;
+    margin-top: 1em;
 }
+
 
 
 /* @media screen and (max-height:300px){
