@@ -130,6 +130,19 @@ padding: 0 15px;
     margin-top: 1.1em;
 }
 
+
+
+.thanks-container{
+        width: 30em;
+        height: 30em;
+        background-image: linear-gradient(#232A34 0%, #181E27 80%);
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
 .hidden{
     display: none;
 }
