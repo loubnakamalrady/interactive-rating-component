@@ -1,9 +1,13 @@
+/* sets all elements to have no padding or margin and use the "Overpass" font family. */
 *{
     padding: 0;
     margin: 0;
     font-family: 'Overpass', sans-serif;
 }
 
+/* sets the body to have a minimum height of 100% of the viewport height, display flex, and center 
+its content both horizontally and vertically using the align-items and justify-content properties.
+ It also sets a 15px padding on the left and right sides. */
 body
 { 
 min-height: 100vh;
@@ -14,6 +18,9 @@ justify-content: center;
 padding: 0 15px;
 }
 
+/* sets the width and height of the container to 30em and sets a linear gradient background from #232A34 to #181E27.
+ It also sets a 5% border-radius, centers its content using flexbox, and aligns it both horizontally and vertically 
+ using the justify-content and align-items properties. */
 .main-container{
     width: 30em;
     height: 30em;
@@ -25,7 +32,9 @@ padding: 0 15px;
     align-items: center;
 }
 
-
+/* this styles the "circled-star" container to position it in the top right corner 
+of its parent container with a circular shape and a dark background color, ready to 
+receive an icon or other content. */
 .circled-star{
     position: absolute;
     left: 35.5em;
@@ -39,6 +48,23 @@ padding: 0 15px;
     align-items: center;
 }
 
+/* The first sets the display property of the container to flex, with a column direction. The container's content will flow from top to bottom.
+
+The second sets the justify-content property to start, which aligns the content to the start of the container along the main axis.
+
+The third sets the width of the container to 80% of its parent container.
+
+The fourth sets the align-items property to start, which aligns the content to the start of the container along the cross-axis.
+
+The fifth sets the text-align property to start, which aligns the text to the start of the container along the inline axis.
+
+The sixth sets the margin-top property to 5em, which creates vertical spacing between the container and its preceding sibling.
+
+The seventh targets both the h1 and p elements within the container. It sets the margin-bottom property to 0.5em, which creates vertical spacing between the elements.
+
+The eighth targets the h1 element within the container. It sets the color property to #FFFFFF, which changes the text color to white.
+
+The ninth targets the p element within the container. It sets the color property to #969FAD, which changes the text color to a light gray. It also sets the font-size property to large and the line-height property to 1.3em, which affects the font size and line spacing respectively. */
 .content{
     display: flex;
     flex-direction: column;
@@ -48,6 +74,8 @@ padding: 0 15px;
     text-align: start;
     margin-top: 5em;
 }
+
+
 
 .content h1 , .content p{
     margin-bottom: 0.5em;
@@ -63,6 +91,17 @@ padding: 0 15px;
     line-height: 1.3em;
 }
 
+
+/*sets the margin-top and margin-bottom properties to 2em, which creates vertical spacing between the container and its preceding and succeeding siblings.
+
+targets all button elements within the container. It sets the padding property to 
+19px on the top and bottom and 26px on the left and right, which creates the size and shape of the buttons. 
+It also sets the border property to none, which removes the button borders. The border-radius property is set to 50%, 
+which creates a circular shape. The color property is set to #969FAD, which sets the text color to light gray. 
+The background-color property is set to #262E38, which sets the button background color to dark blue-gray. 
+The margin-left and margin-right properties are set to 10px and 9px respectively, which creates horizontal 
+spacing between the buttons. Finally, the font-size property is set to large, which affects the text size within 
+the buttons. */
 .choose-circles{
     margin-top: 2em;
     margin-bottom: 2em;
@@ -79,6 +118,13 @@ padding: 0 15px;
     font-size: large;
 }
 
+
+/* targets the button element within the container. It sets the padding property to 20px on the top and bottom and 
+170px on the left and right, which creates the button size and shape. It also sets the background-color property to 
+#fc7614, which sets the button background color to an orange shade. The color property is set to #FFFFFF, which sets 
+the text color to white. The border property is set to none, which removes the button border. The border-radius 
+property is set to 1.7rem, which creates a rounded shape for the button corners. Finally, the margin-top property 
+is set to 1em, which creates vertical spacing between the button and its preceding sibling. */
 .submit-button button{
     padding: 20px 170px;
     background-color: #fc7614;
@@ -88,24 +134,39 @@ padding: 0 15px;
     margin-top: 1em ;
 }
 
-
+/*  second rule targets the button element when the user hovers over it with their cursor. It sets the 
+background-color property to #FFFFFF, which sets the button background color to white. The color property is 
+set to #fc7614, which sets the text color to the orange shade used for the background color. The cursor property 
+is set to pointer, which changes the cursor to a hand icon to indicate that the button is clickable. */
 .submit-button button:hover{
     background-color: #FFFFFF;
     color: #fc7614;
     cursor: pointer;
 }
 
+/* targets the button element when it is in focus. It sets the background-color property to #7C8798, 
+which sets the button background color to a grayish-blue shade. The color property is set to #FFFFFF, 
+which sets the text color to white. */
 .choose-circles button:focus{
     background-color: #7C8798;
     color: #FFFFFF;
 }
 
+/* targets the button element when the user hovers over it with their cursor. It sets the background-color property 
+to #fc7614, which sets the button background color to the orange shade used for the "submit" button. 
+The color property is set to white, which sets the text color to white. */
 .choose-circles button:hover{
     background-color: #fc7614;
     color: white;
 }
 
-
+/*sets the background-color property to #262E38, which sets the container background color to a dark blue-gray shade,
+ sets the padding property to 7px on the top and bottom and 25px on the left and right, which creates the size and 
+ shape of the container, sets the border-radius property to 25px, which creates a rounded shape for the container 
+ corners, The fourth rule sets the font-size property to larger, which increases the text size within the container, 
+ The fifth rule sets the color property to #FC7614, which sets the text color to an orange shade used for the "submit"
+  button, The sixth rule sets the margin-top property to 1.5em, which creates vertical spacing between the container 
+  and its preceding sibling. */
 .selection{
     background-color: #262E38;
     padding: 7px 25px;
@@ -115,11 +176,19 @@ padding: 0 15px;
     margin-top: 1.5em;
 }
 
+/* The first rule targets the h1 element within the container. It sets the color property to #FFFFFF, 
+which changes the text color to white. It also sets the margin-top property to 1.5em, which creates vertical 
+spacing between the heading and its preceding sibling. */
 .contents h1{
     color: #FFFFFF;
     margin-top: 1.5em;
 }
 
+/*targets the p element within the container. It sets the color property to #969FAD, which changes the text color to 
+a light gray. It also sets the width property to 75%, which constrains the width of the paragraph to 75% of its parent
+ container. The margin-left property is set to 3.9em, which creates horizontal spacing between the paragraph and its 
+ preceding sibling. The margin-top property is set to 1.5em, which creates vertical spacing between the paragraph and 
+ its preceding sibling. */
 .contents p{
     color : #969FAD;
     width: 75%;
@@ -127,13 +196,19 @@ padding: 0 15px;
     margin-top: 1.5em;
 }
 
+/*sets the margin-bottom property to 1.1em, which creates vertical spacing between the div and its succeeding sibling,
+ sets the margin-top property to 1.1em, which creates vertical spacing between the div and its preceding sibling. */
 .hidden div{
     margin-bottom: 1.1em;
     margin-top: 1.1em;
 }
 
 
-
+/*sets the width and height of the container to 30em, sets a linear gradient background from #232A34 to #181E27 using the background-image property, 
+sets a border-radius of 5%, which gives the container rounded corners, sets the display property to flex, 
+which allows the container's child elements to be flex items., sets the flex-direction property to column,
+ which stacks the container's child elements vertically from top to bottom, sets the justify-content and align-items 
+ properties to center, which aligns the container's child elements horizontally and vertically within the container. */
 .thanks-container{
         width: 30em;
         height: 30em;
@@ -145,6 +220,9 @@ padding: 0 15px;
         align-items: center;
 }
 
+/* This will hide all elements with a class of "hidden" and remove them from the flow of the HTML document.
+This can be useful for temporarily hiding content that may need to be displayed later, or for hiding content 
+that is not needed for the current state of the webpage. */
 .hidden{
     display: none;
 }
