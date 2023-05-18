@@ -36,9 +36,9 @@ padding: 0 15px;
 of its parent container with a circular shape and a dark background color, ready to 
 receive an icon or other content. */
 .circled-star{
-    position: absolute;
-    left: 35.5em;
-    top: 10em;
+    position: relative;
+    right: 10.5em;
+    bottom: 0.5em;
     width: 4em;
     height: 4em;
     background-color: #262E38;
@@ -72,7 +72,7 @@ The ninth targets the p element within the container. It sets the color property
     width: 80%;
     align-items: start;
     text-align: start;
-    margin-top: 5em;
+    margin-top: 1em;
 }
 
 
